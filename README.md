@@ -1,0 +1,1 @@
+# A mini e-commerce website that handles the core functionality of an online shopping platform. It focuses on user interaction, clean UI, and essential shopping features built using HTML, CSS, and JavaScript.
