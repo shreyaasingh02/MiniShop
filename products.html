@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MiniShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>MiniShop</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Your Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://rukminim3.flixcart.com/image/850/1000/xif0q/mug/x/q/x/cute-bear-mugs-cute-cups-bear-tea-coffee-cup-with-handle-8-5oz-original-imagnzetn7gmgamg.jpeg?q=20&crop=false" alt="Product 1">                    
+                    <h3>Product: Multipurpose Mug</h3>
+                    <p>Material: Ceramic</p>
+                    <p>Size: 8.5 oz</p>
+                    <p>Price: $18.76</p>
+                    <a href="javascript:void(0)" class="add-to-cart" onclick="addToCart('Multipurpose Mug', '$18.76')">Add To Cart</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://qshistudio.com/cdn/shop/files/Ceramic-Mug-Daisy-7.jpg?v=1716892338&width=533" alt="Product 2">
+                    <h3>Product: Multipurpose Mug</h3>
+                    <p>Material: Ceramic</p>
+                    <p>Size: 8.2 oz</p>
+                    <p>Price: $19.44</p>
+                    <a href="javascript:void(0)" class="add-to-cart" onclick="addToCart('Multipurpose Mug', '$19.44')">Add To Cart</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://www.pastelhome.in/cdn/shop/files/0517E227-100D-4179-9AB6-47CABD464A5C.jpg?v=1711186360" alt="Product 3">
+                    <h3>Product: Multipurpose Mug</h3>
+                    <p>Material: Ceramic</p>
+                    <p>Size: 8.0 oz</p>
+                    <p>Price: $20.56</p>
+                    <a href="javascript:void(0)" class="add-to-cart" onclick="addToCart('Multipurpose Mug', '$20.56')">Add To Cart</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpDm-kq6La80hlJAYu2ztgl1atdXARc7CEIw&s" alt="Product 4">
+                    <h3>Product: Multipurpose Mug</h3>
+                    <p>Material: Ceramic</p>
+                    <p>Size: 8.3 oz</p>
+                    <p>Price: $25.66</p>
+                    <a href="javascript:void(0)" class="add-to-cart" onclick="addToCart('Multipurpose Mug', '$25.66')">Add To Cart</a>
+                </div>
+        
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStVFZX0fMqezgMB-ERCcb4sx7oczRO-RA3Yw&s" alt="Product 5">
+                    <h3>Product: Multipurpose Mug</h3>
+                    <p>Material: Ceramic</p>
+                    <p>Size: 8.4 oz</p>
+                    <p>Price: $15.09</p>
+                    <a href="javascript:void(0)" class="add-to-cart" onclick="addToCart('Multipurpose Mug', '$15.09')">Add To Cart</a>
+                </div>
+             
+                <div class="product-item">
+                    <img src="https://www.tinyminymo.com/cdn/shop/products/CuteBearMug.jpg?v=1741541133&width=360" alt="Product 6">
+                    <h3>Product: Multipurpose Mug</h3>
+                    <p>Material: Ceramic</p>
+                    <p>Size: 8.1 oz</p>
+                    <p>Price: $24.44</p>
+                    <a href="javascript:void(0)" class="add-to-cart" onclick="addToCart('Multipurpose Mug', '$24.44')">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Function to add items to the cart
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or initialize it as an empty array
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a new product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart
+            cart.push(product);
+
+            // Save the cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Optionally, alert the user
+            alert(productName + " has been added to your cart!");
+        }
+    </script>
+
+</body>
+</html>

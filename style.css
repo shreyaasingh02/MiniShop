@@ -1,0 +1,365 @@
+/* index section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/cd/14/75/cd1475ed31d310a9464df8fb3bdb8887.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #930523;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;;
+    float: left;
+    font-size: 32px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 100px;
+    height: 90vh;
+}
+
+.hero-left {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-left img:hover {
+    transform: scale(1.05);
+}
+
+.hero-left img {
+    width: 150%;
+    height: calc(33.33% - 13px);
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-main-img {
+    width: 1050px; 
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 12px 24px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 15px 10px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.btn:hover {
+    background: rgb(1, 47, 1);
+    transform: scale(1.05);;
+}
+
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Products Section */
+
+.products {
+    padding: 60px 0;
+    background-image: url(https://mrwallpaper.com/images/hd/coffee-stained-beige-aesthetic-laptop-6820fm8nqv16bn7p.jpg);
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.add-to-cart {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover{
+    background-color: green;
+    transform: scale(1.05);
+}
+
+p {
+    font-weight: bold;
+}
+
+/* Cart page styles */
+.cart {
+    padding: 20px 0;
+    background-color: white;
+    background-image: url(https://wallpapers.com/images/hd/beige-desktop-66bb6jl1xybpzd0t.jpg);
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: #cc0000;
+}
+
+button#clearCart {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button#clearCart:hover {
+    background-color: #e63946;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 0;
+    background-color: white;
+    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-pastel-peach-gold-marble-background-picture-image_1599061.jpg);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+#success-msg {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .footer-nav {
+    margin-top: 10px;
+}
+
+footer .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.index-foot {
+    background-color: white;
+    color:#333;
+}
+
+
